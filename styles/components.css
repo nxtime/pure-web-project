@@ -1,0 +1,63 @@
+.btn {
+  background-color: var(--base);
+  border-radius: var(--rounded-md);
+  padding: 0.75rem 1.25rem;
+  color: var(--text-color);
+}
+
+.btn:hover {
+  background-color: var(--base-darker);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+  color: var(--text-color);
+}
+
+.btn-primary-dark {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary-dark:hover {
+  background-color: var(--terciary);
+  color: white;
+}
+
+.btn-error {
+  background-color: var(--error);
+  color: white;
+}
+
+.btn-error:hover {
+  background-color: var(--error-light);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: hsl(0, 0%, 40%, 0.4);
+  border-radius: var(--rounded-md);
+  padding: 1.5rem;
+  color: var(--text-color);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 40%, 0.4);
+  border-radius: var(--rounded-md);
+  padding: 1.5rem;
+  color: var(--text-color);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  width: 100vw;
+}

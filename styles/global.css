@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+:root {
+  --primary: hsl(180, 50%, 50%);
+  --secondary: hsl(180, 50%, 75%);
+  --terciary: hsl(180, 50%, 25%);
+  --error: hsl(0, 50%, 30%);
+  --error-light: hsl(0, 50%, 50%);
+  --text-darker: hsl(0, 0%, 10%);
+  --text-normal: hsl(0, 0%, 25%);
+  --text-lighter: hsl(0, 0%, 50%);
+  --base-lighter: hsl(0, 0%, 90%);
+  --base: hsl(0, 0%, 80%);
+  --base-darker: hsl(0, 0%, 70%);
+  --rounded-md: 0.5rem;
+}
+
+body {
+  font-family: "Poppins", "Roboto", "Ubuntu", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Roboto", "Ubuntu", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-normal);
+}
+
+a:hover {
+  /* text-decoration: underline;
+  text-underline-offset: 0.5rem; */
+  color: var(--text-highlight);
+}
+
+button {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-auto {
+  min-height: 100vh;
+}
+
+.h-screen {
+  min-height: 100vh;
+}
