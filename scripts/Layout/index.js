@@ -1,8 +1,11 @@
 class AppClass {
   constructor() {
+    this.currentPage = null;
+    const animation = document.body.appendChild(document.createElement('div'));
+    animation.appendChild(document.createElement('div'));
+    animation.id = 'animation';
     this.root = document.body.appendChild(document.createElement('div'));
     this.root.id = 'root';
-    this.currentPage = null;
     this.init();
   }
 

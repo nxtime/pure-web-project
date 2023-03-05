@@ -1,3 +1,73 @@
 .transition-colors {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.transition {
+  -webkit-animation: slide 0.8s ease-in-out;
+  animation: slide 0.8s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  overflow-x: hidden;
+}
+
+#animation {
+  position: relative;
+  height: 0;
+  width: 0;
+  z-index: 999;
+}
+
+#animation > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175vw;
+  height: 175vh;
+  background-color: var(--primary);
+  transform: rotateZ(45deg) translate(100%, 10%);
+  opacity: 0;
+}
+
+#animation.new::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175vw;
+  height: 175vh;
+  background-color: var(--terciary);
+  -webkit-animation: slide 0.8s ease-in-out;
+  animation: slide 0.8s ease-in-out 0.1s;
+  transform: rotateZ(45deg) translate(100%, 10%);
+  opacity: 0;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 1;
+    transform: rotateZ(45deg) translate(-70%, 20%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(45deg) translate(100%, 20%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: rotateZ(45deg) translate(-100%, 10%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(45deg) translate(100%, 10%);
+  }
+}

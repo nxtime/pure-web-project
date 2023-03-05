@@ -11,10 +11,14 @@ class RouterClass {
 
   goto(page = '/') {
     this.page = page;
-    document.querySelector('body').classList.add('transition');
+
+    document.querySelector('#animation div').classList.add('transition');
+    document.querySelector('#animation').classList.add('new');
     setTimeout(() => {
-      document.querySelector('body').classList.remove('transition');
-    }, 5000)
+      document.querySelector('#animation div').classList.remove('transition');
+      document.querySelector('#animation').classList.remove('new');
+    }, 800)
+
     this.render();
   }
 
